@@ -1,0 +1,58 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.reglement-first {
+    background-color: black;
+    width: 99%;
+    text-align: center;
+    margin: auto;
+    padding: 60px;
+}
+
+.reglement-first h2 {
+    text-align: center;
+    font-size: 45px;
+    color: #FAF757;
+    font-family: 'run';
+}
+
+.first {
+    padding: 25px;
+    font-size: 19px;
+    font-family: 'calibri';
+}
+
+.reglement-second {
+    width: 97%;
+    margin: auto;
+}
+
+.rules{
+   width: 100%;
+}
+
+.reglement-second article p {
+    margin: 25px;
+    font-size: 19px;
+    font-family: "calibri";
+    line-height: 27px;
+}
+
+.footer-reglement {
+    list-style: none;
+    line-height: 25px;
+    padding-top: 20px;
+    display: block;
+    font-family: 'phily';
+    text-align: center;
+    background-color: rgba(219,215,210,0.4);
+    color: rgba(0,0,0,0.6);
+    font-size: 15px;
+}
+
+.footer-reglement ul {
+    list-style: none;
+}

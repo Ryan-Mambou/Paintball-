@@ -1,0 +1,233 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.contact h2 {
+    font-family: 'phily';
+}
+
+.contact {
+    top: 30%;
+    width: 80%;
+}
+
+.contact i {
+    font-size: 25px;
+    color: white;
+    text-shadow: 2px 2px 10px gray;
+    margin: 5px;
+}
+
+.contact-first {
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-family: 'calibri';
+}
+
+.contacter, .localisation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    background-color: black;
+    height: 220px;
+    margin: 25px;
+    box-shadow: 10px 10px 20px 10px rgba(65, 47, 47, 0.5);
+}
+
+figure .disponible {
+    font-size: 45px;
+}
+
+figure .equal {
+    font-size: 80px;
+}
+
+.reservation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    background-color: black;
+    height: 300px;
+}
+
+.contacter i, .localisation i, .reservation i {
+    font-size: 40px;
+    color: rgba(26, 238, 139, 0.9);
+}
+
+i + span {
+    font-size: 25px;
+    font-style: italic;
+    margin-top: 20px;
+    color: rgba(26, 238, 139, 0.9);
+}
+
+.contact-second {
+    background-color: rgba(219,215,210,0.6);
+}
+
+.dropdowns {
+    position: relative;
+    height: 60px;
+    width: 85%;
+    padding: 20px;
+    box-shadow: 2px 3px 40px 10px rgba(65, 47, 47, 0.3);
+    margin: auto;
+    margin-top: 30px;
+}
+
+.link {
+    background-color: rgba(219,215,210,0.6);
+    font-family: 'calibri';
+    color: rgba(15, 183, 224, 0.6);
+    font-weight: bold;
+    font-size: 17px;
+    width: 100%;
+}
+
+.show{
+    height: 180px;
+}
+
+.dropdowns i {
+    float: right;
+    display: block;
+    transform: rotate(270deg);
+    color: black;
+}
+
+.drop {
+    position: relative;
+    margin: auto;
+    background-color: rgba(219,215,210,1);
+    width: 85%;
+    color: black;
+    max-height: 0; 
+    overflow: hidden;
+    transition: 1s ease max-height;
+    
+}
+
+.active, .accordion:hover {
+    background-color: rgba(219,215,210,1);;
+  }
+
+.drop::before {
+    content: "";
+    position: absolute;
+    width: .4rem;
+    height: 90%;
+    background-color: rgba(15, 183, 224, 0.6);
+    top: 50%;
+    left: 0;
+    transform: translateY(-40%);
+}
+
+.drop p {
+    font-weight: bold;
+    font-family: 'calibri';
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
+.dropdowns.active .drop{
+    max-height: 0;
+}
+
+.dropdowns.active .caret{
+    transform: rotate(360deg);
+    color: rgba(24, 202, 119, 1);
+}
+
+
+.dropdowns p{
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+
+.footer-contact {
+    list-style: none;
+    line-height: 25px;
+    padding-top: 20px;
+    display: block;
+    font-family: 'phily';
+    text-align: center;
+    background-color: rgba(219,215,210,0.4);
+    color: rgba(0,0,0,0.6);
+    font-size: 15px;
+    margin-top: 1px;
+    width: 100%;
+}
+
+.footer-contact ul {
+    list-style: none;
+}
+
+.up {
+    animation: toUp 1s ease-out 1;
+}
+
+@keyframes toUp {
+    from{
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@media screen and (min-width: 1023px) {
+    figure .disponible {
+        font-size: 38px;
+    }   
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+    .contact{
+        top : 22%;
+    }
+
+    figure .disponible {
+        font-size: 38px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .contact{
+        top : 19%;
+    }
+
+    figure .disponible {
+        font-size: 35px;
+    }
+
+    figure .equal {
+        font-size: 70px;
+    }
+
+    .contact {
+        width: 93%;
+    }
+
+    .contact-first {
+        flex-direction: column;
+    }
+
+    .contacter, .localisation, .reservation {
+        height: 270px;
+        width: 90%;
+        align-self: center;
+    }
+
+}
