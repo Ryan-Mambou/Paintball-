@@ -168,39 +168,7 @@ const observerUp = new IntersectionObserver(entries => {
     let navlinks = document.querySelector('.navlinks');
     let links = document.querySelectorAll('.links');
     console.log(dropdowns.length);
-/**
-    dropdowns.forEach(el => {
-        el.addEventListener('click', () => {
-            if(el.classList.contains('drop')){
-                console.log(!el.classList.contains('drop'));
-                el.classList.remove('drop');
-            }
-            el.classList.add('drop');
-            
-        });
-    });  **/
 
- /**  dropdowns.forEach(el => {
-        el.addEventListener('click', () => {
-            el.classList.toggle('show');
-        });
-    }); */
-
-   
-/**var i;
-
-for (i = 0; i < dropdowns.length; i++) {
-  dropdowns[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    console.log(this.nextElementSibling.innerHTML);
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + 10 + "px";
-    } 
-  });
-} */
 
 dropdowns.forEach(dropdown => {
     dropdown.addEventListener('click', () => {
