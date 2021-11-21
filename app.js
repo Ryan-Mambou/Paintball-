@@ -245,6 +245,11 @@ dropdowns.forEach(dropdown => {
     let contacter = document.querySelector('.contacter');
     let message = "Bonjour, s'il vous plait j'aimerais passer une commande pour {Jour} d'un pack de {Prix}.";
 
+    whatsappButton.addEventListener('click', () => {
+        window.open('https://wa.me/237698496809/?text=' + `${message}`);
+    });
+
+
     reserveOne.forEach(reserve => {
         reserve.addEventListener('click', () => {
             window.open('https://wa.me/237698496809/?text=' + `${message}`);
@@ -257,12 +262,12 @@ dropdowns.forEach(dropdown => {
         });
     });
 
-    
-    whatsappButton.addEventListener('click', () => {
-        window.open('https://wa.me/237698496809/?text=' + `${message}`);
-    });
 
     contacter.addEventListener('click', () => {
         window.open('https://wa.me/237698496809/?text=' + `${message}`);
     });
+
+    
+
+
 
