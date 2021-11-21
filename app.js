@@ -215,11 +215,6 @@ dropdowns.forEach(dropdown => {
     });
 });
     
-   /**  function toggleShow(){
-        document.querySelectorAll('.drop').forEach(el => {
-            el.classList.toggle('show');
-        });
-    } **/
 
 //Fonction  which opens navigation menu when hamburger icon is clicked and switches between hamburger and close icon
     hamburger.addEventListener('click', () => {
