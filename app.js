@@ -238,3 +238,31 @@ dropdowns.forEach(dropdown => {
         });  
        }
     });
+
+    let reserveOne = document.querySelectorAll('.reserver');
+    let reserveTwo = document.querySelectorAll('.reserver2');
+    let whatsappButton = document.querySelector('.whatsapp-button');
+    let contacter = document.querySelector('.contacter');
+    let message = "Bonjour, s'il vous plait j'aimerais passer une commande pour {Jour} d'un pack de {Prix}.";
+
+    reserveOne.forEach(reserve => {
+        reserve.addEventListener('click', () => {
+            window.open('https://wa.me/237698496809/?text=' + `${message}`);
+        });
+    });
+
+    reserveTwo.forEach(reserve => {
+        reserve.addEventListener('click', () => {
+            window.open('https://wa.me/237698496809/?text=' + `${message}`);
+        });
+    });
+
+    
+    whatsappButton.addEventListener('click', () => {
+        window.open('https://wa.me/237698496809/?text=' + `${message}`);
+    });
+
+    contacter.addEventListener('click', () => {
+        window.open('https://wa.me/237698496809/?text=' + `${message}`);
+    });
+
