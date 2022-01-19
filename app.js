@@ -238,7 +238,7 @@ dropdowns.forEach(dropdown => {
     let reserveTwo = document.querySelectorAll('.reserver2');
     let whatsappButton = document.querySelector('.whatsapp-button');
     let contacter = document.querySelector('.contacter');
-    let message = "Bonjour, s'il vous plait j'aimerais passer une commande pour {Jour} d'un pack de {Prix}.";
+    let message = "Bonjour, s'il vous plait j'aimerais passer une commande pour {Jour} d'un pack de {Prix}F.";
 
     whatsappButton.addEventListener('click', () => {
         window.open('https://wa.me/237698496809/?text=' + `${message}`);
