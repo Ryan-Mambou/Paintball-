@@ -205,15 +205,15 @@ i + span {
 
 @media screen and (max-width: 767px) {
     .contact{
-        top : 19%;
+        top : 15%;
     }
 
     figure .disponible {
-        font-size: 35px;
+        font-size: 2rem;
     }
 
     figure .equal {
-        font-size: 70px;
+        font-size: 3rem;
     }
 
     .contact {
