@@ -83,6 +83,8 @@ i + span {
     box-shadow: 2px 3px 40px 10px rgba(65, 47, 47, 0.3);
     margin: auto;
     margin-top: 30px;
+    display: flex;
+    align-items: center;
 }
 
 .link {
