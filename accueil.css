@@ -266,7 +266,7 @@ nav {
 
 @keyframes fromLeft {
     0%{
-        transform: translateX(-300px);
+        transform: translateX(-500px);
         opacity: 0;
     }
     100% {
@@ -351,8 +351,7 @@ nav {
     }
 
     .one .heading, .two .heading, .three .heading, .four .heading{ 
-        width: 40%;
-        font-size: 30px;
+        font-size: 1.7rem;
         white-space: pre-wrap;
         text-align: center;
     }
@@ -371,7 +370,7 @@ nav {
 
 @media screen and (max-width: 767px) {
     .intro {
-        top: 18%;
+        top: 14%;
     }
 
     .intro h2 {
@@ -380,7 +379,7 @@ nav {
 
     .reserver {
         width: 45%;
-        font-size: 23px;
+        font-size: 1rem;
         white-space: nowrap;
         margin-top: 25px;
         margin-right: 30%;
@@ -389,14 +388,18 @@ nav {
 
     .one, .two, .three {
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
+
 
     .four {
         flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
     }
 
     .one .heading, .two .heading, .three .heading, .four .heading{ 
-        width: 70%;
         font-size: 15px;
         text-align: center;
         white-space: nowrap;
@@ -404,13 +407,30 @@ nav {
         margin-top: 20px;
     }
 
+    .one .heading, .three .heading, .four .heading{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .three .heading {
+        margin-left: 0px;
+    }
+    
+
+    section h2{
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
     .one .paragraph, .two .paragraph, .three .paragraph, .four .paragraph{
-        font-size: 19px;
+        font-size: 1.1rem;
         font-family: 'calibri';
         width: 95%;
         font-size: 17px;
         line-height: 22px;
         margin: 25px 0px;
+        padding: 10px;
     }
     
     
